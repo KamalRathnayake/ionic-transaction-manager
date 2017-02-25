@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.hiapp314205" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>hiapp</name>
+  <name>Trance</name>
   <description>
-        An Ionic Framework and Cordova project.
+        For keeping track of and analysing your incomes and spendings
     </description>
-  <author email="you@example.com" href="http://example.com/">
-      Your Name Here
+  <author email="kamalrathnayake@outlook.com" href="http://example.com/">
+      caydev
     </author>
   <content src="index.html"/>
   <access origin="*"/>

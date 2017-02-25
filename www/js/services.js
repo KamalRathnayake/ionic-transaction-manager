@@ -47,4 +47,24 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+.factory('transactionRepository', function($http){
+  var inmemdata=[];
+  return {
+    post:function(transaction, callback){
+      //transaction.id=inmemdata.length;
+      inmemdata.push(JSON.parse(JSON.stringify(transaction)));
+      setTimeout(callback,100);
+    },
+    get:function(callback){
+      // $http.get('http://moneykey.azurewebsites.net/api/transaction')
+      //      .then(function(response){
+      //        console.log(response);
+      //      }, function(error){
+      //        console.log(error);
+      //      });
+     callback(inmemdata);
+    }
+  };
 });

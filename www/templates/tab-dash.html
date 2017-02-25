@@ -1,8 +1,28 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="Trance Home">
   <ion-content class="padding">
-    <h2>Transaction Manager</h2>
+    <h2>Trance Expense Manager</h2>
     <p>
     Simple app for transaction management tasks
     </p>
+    
+    <div>
+      <div class="form-group">
+        <label>Transaction Type</label>
+        <input ng-model="transaction.type"  type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label>Amount</label>
+        <input ng-model="transaction.amount"  type="text" class="form-control"/>
+      </div>
+
+<div>
+      <button ng-click="addTransaction()">Save Transaction</button>
+      </div>
+<div>
+      <label>
+        {{transaction.currentState}}
+      </label>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
